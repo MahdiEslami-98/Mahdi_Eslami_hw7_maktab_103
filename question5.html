@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/question5.css" />
+    <title>question 5</title>
+  </head>
+  <body>
+    <header class="head">
+      <div class="logo">
+        <h3>LOGO</h3>
+      </div>
+      <nav class="navigation">
+        <a href="#">Company</a>
+        <a href="#">Services</a>
+        <a href="#">FinTech Solutions</a>
+        <a href="#">Product</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact us</a>
+      </nav>
+    </header>
+    <main>
+      <div class="container flex justify-even align-cen">
+        <div class="flex justify-cen align-cen popup">
+          Your Information Succesfully Submited
+        </div>
+        <form class="form flex-col">
+          <h1>Contact us</h1>
+          <div>
+            <p>Need an experienced and skilled hand with IT Projects?</p>
+            <p>Fill out the form to get a free consultation</p>
+          </div>
+          <div>
+            <input
+              type="text"
+              placeholder="Your Company Name"
+              id="company-name"
+            />
+            <p class="red" id="name_alert">Please enter the company name</p>
+          </div>
+          <div>
+            <input
+              type="text"
+              placeholder="Nature of Bussiness"
+              id="bussiness"
+            />
+            <p class="red" id="bussiness_alert">
+              Please enter the Nature of Bussiness
+            </p>
+          </div>
+          <div>
+            <input
+              type="text"
+              placeholder="Address"
+              class="address"
+              id="addres"
+            />
+            <input
+              type="text"
+              placeholder="Postcode"
+              class="postcode"
+              id="p-code"
+            />
+            <p class="red" id="address_alert">Please enter the Address</p>
+            <p class="red" id="postal_alert">Please enter the Postal code</p>
+          </div>
+          <div>
+            <input type="text" placeholder="Contact Name" id="contact-name" />
+            <p class="red" id="cname_alert">Please enter the Contact name</p>
+          </div>
+          <div>
+            <input type="text" placeholder="Contact Phone" id="phone-number" />
+            <p class="red" id="cnumber_alert">Please enter the phone number</p>
+          </div>
+          <div>
+            <input type="text" placeholder="Email" id="email" />
+            <p class="red" id="email_alert">Please enter the valid email</p>
+          </div>
+          <input type="text" placeholder="Linkedin" />
+          <input type="text" placeholder="Let's talk about your idea" />
+          <label
+            for="file-inp"
+            class="file-label flex-col gap-1 align-cen justify-cen"
+          >
+            <span
+              ><ion-icon name="share-outline"></ion-icon>Upload Addtional
+              file</span
+            >
+            <input type="file" id="file-inp" />
+          </label>
+          <button type="submit">SUBMIT</button>
+          <div>
+            <input type="checkbox" id="sign" />
+            <label for="sign"
+              >I want to protect my data by signing an NDA</label
+            >
+          </div>
+        </form>
+        <div class="offices flex-col">
+          <div class="flex-col gap-2">
+            <h4>Offices</h4>
+            <div>
+              <p>United State</p>
+              <p>500 5th Avenue Suite 400, NY 10110</p>
+            </div>
+            <div>
+              <p>United Kingdom</p>
+              <p>High St, Bromley BR1 1DN</p>
+            </div>
+            <div>
+              <p>France</p>
+              <p>80 avenue des Terroirs de France, Paris</p>
+            </div>
+          </div>
+          <div class="flex-col gap-2">
+            <h4>For Quick Inquiries</h4>
+            <div class="flex">
+              <img
+                src="./image/favicon-32x32-uk.png"
+                alt="uk-flag"
+                class="flag"
+              /><span> +44 7777777777</span>
+            </div>
+            <div class="flex">
+              <img
+                src="./image/favicon-32x32-us.png"
+                alt="us-flag"
+                class="flag"
+              /><span> +1 3333333333</span>
+            </div>
+          </div>
+          <div class="flex-col gap-2">
+            <h4>Would you like to join our newsletter?</h4>
+            <div>
+              <input type="email" placeholder="Email" class="em-sub" />
+              <button class="news-btn">✓</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./js/question5.js"></script>
+  </body>
+</html>

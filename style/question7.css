@@ -1,0 +1,181 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+main {
+  transition: all ease-in 0.8;
+}
+
+.btn {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: #1e68cf;
+  color: #fff;
+  cursor: pointer;
+}
+
+.vid {
+  max-width: 100%;
+  height: 400px;
+  margin-top: 2rem;
+}
+
+.vid video {
+  width: 1200px;
+  height: 300px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-cen {
+  justify-content: center;
+}
+
+.align-cen {
+  align-items: center;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.gap-2p {
+  gap: 2px;
+}
+
+.sorts {
+  width: 1200px;
+}
+
+.sorts select {
+  width: 200px;
+  height: 35px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+}
+
+button {
+  background-color: #1e68cf;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.sorts button {
+  width: 120px;
+  height: 35px;
+  align-self: flex-end;
+  border-radius: 3px;
+}
+
+.btn {
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+hr {
+  margin: 50px 0;
+  width: 1200px;
+}
+
+.tab {
+  width: 100%;
+}
+
+.table {
+  width: 1200px;
+  font-size: 12px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.table thead {
+  height: 35px;
+}
+
+.table th {
+  width: 80px;
+}
+
+.table tr {
+  border: 1px solid #ccc;
+}
+
+.table tr:first {
+  border: none;
+}
+
+.add-modal {
+  width: 400px;
+  height: 670px;
+  background-color: #fff;
+  position: fixed;
+  right: -700px;
+  top: 370px;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 10px 10px #888;
+  border-radius: 5px;
+  padding: 20px 10px;
+  transition: all ease 0.3s;
+}
+
+.add-modal input {
+  border: none;
+  outline: none;
+  height: 24px;
+  padding-left: 8px;
+  border-bottom: 1px solid #555;
+  background-color: #ddd;
+  color: #222;
+}
+
+.btns {
+  width: 100%;
+  height: 80px;
+  justify-content: space-evenly;
+}
+
+#save,
+#cancel {
+  width: 100px;
+  height: 40px;
+}
+
+#save {
+  background-color: #229f22;
+}
+#cancel {
+  background-color: rgb(208, 25, 25);
+}
+
+.active {
+  transform: scale(0.8);
+  position: relative;
+  left: -200px;
+}

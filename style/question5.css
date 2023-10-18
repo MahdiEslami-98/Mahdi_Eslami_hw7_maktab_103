@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input[type="text"],
+input[type="email"] {
+  border: none;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  outline: none;
+  padding: 5px 15px;
+  border-bottom: 1px solid #888;
+}
+
+button {
+  color: #fff;
+  background-color: #26b136;
+  height: 45px;
+  border: none;
+  cursor: pointer;
+}
+
+.head {
+  max-width: 100%;
+  height: 70px;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin: 0 150px;
+  color: #999;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #777;
+  font-size: 14px;
+  font-weight: 200;
+  margin-left: 18px;
+}
+
+.navigation a:hover {
+  transition: all ease 0.12s;
+  border-bottom: 3px solid #26b136;
+  border-radius: 1px;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-cen {
+  align-items: center;
+}
+
+.justify-cen {
+  justify-content: center;
+}
+
+.justify-even {
+  justify-content: space-evenly;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding: 5rem 3rem;
+  max-width: 1920px;
+  position: relative;
+}
+
+.form {
+  width: 40%;
+  gap: 40px;
+}
+
+.offices {
+  width: 25%;
+  gap: 3rem;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.form .address {
+  width: 60%;
+  margin-right: 17px;
+}
+
+.form .postcode {
+  width: 35%;
+}
+
+.offices .em-sub {
+  width: 78%;
+}
+
+.news-btn {
+  width: 20%;
+}
+
+.flag {
+  width: 22px;
+  height: 22px;
+}
+
+.file-label {
+  height: 100px;
+  border: 2px dashed #ccc;
+  cursor: pointer;
+  position: relative;
+}
+
+#file-inp {
+  display: none;
+}
+
+.red {
+  color: rgb(231, 9, 9);
+  padding-top: 10px;
+  visibility: hidden;
+}
+
+.popup {
+  width: 350px;
+  height: 40px;
+  color: #fff;
+  background-color: #26b136;
+  border-radius: 5px;
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  display: none;
+}

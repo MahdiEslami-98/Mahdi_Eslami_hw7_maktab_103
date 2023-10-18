@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/question7.css" />
+    <title>question 7</title>
+  </head>
+  <body>
+    <main class="flex-col align-cen">
+      <div class="vid flex-col align-cen gap-1">
+        <h1 class="title">مشاهده ویدیو معرفی محصولات</h1>
+        <video controls>
+          <source src="./image/2337062380-720p.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="flex gap-1 justify-cen align-cen sorts">
+        <div>
+          <p>Laptop Model:</p>
+          <select name="model" id="model">
+            <option value="">Nothing Selected ...</option>
+            <option value="asus">ASUS</option>
+            <option value="dell">DELL</option>
+            <option value="hp">HP</option>
+          </select>
+        </div>
+        <div>
+          <p>Processor:</p>
+          <select name="procesor" id="cpu">
+            <option value="">Nothing Selected ...</option>
+            <option value="i3">Intel Core i3</option>
+            <option value="i5">Intel Core i5</option>
+            <option value="i7">Intel Core i7</option>
+          </select>
+        </div>
+        <div>
+          <p>RAM:</p>
+          <select name="RAM" id="ram">
+            <option value="">Nothing Selected ...</option>
+            <option value="8gb">8 GB</option>
+            <option value="16gb">16 GB</option>
+            <option value="32gb">32 GB</option>
+          </select>
+        </div>
+        <div>
+          <p>Hard disk:</p>
+          <select name="hard-disk" id="HDD">
+            <option value="">Nothing Selected ...</option>
+            <option value="512gb">512 GB</option>
+            <option value="1tb">1 TB</option>
+            <option value="2tb">2 TB</option>
+          </select>
+        </div>
+        <div>
+          <p>Display:</p>
+          <select name="display" id="display">
+            <option value="">Nothing Selected ...</option>
+            <option value="15.6">15.6 Inch</option>
+            <option value="17">17 Inch</option>
+          </select>
+        </div>
+        <button id="add_btn">+ Add</button>
+      </div>
+      <hr />
+      <div class="flex justify-cen tab">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Laptop Model</th>
+              <th>Picture</th>
+              <th>Processor</th>
+              <th>RAM</th>
+              <th>Hard disk</th>
+              <th>Display</th>
+              <th>Graphics</th>
+              <th>OS</th>
+              <th>Weight</th>
+              <th>Battery</th>
+              <th>Price</th>
+              <th>Purchase</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="list">
+            <!-- <tr>
+              <td>ASUS TUF Gaming F15 FX507ZC</td>
+              <td><img src="./image/2.jpg" alt="" /></td>
+              <td>Intel Core i7 12700H</td>
+              <td>16 GB</td>
+              <td>1 TB</td>
+              <td>15.6 Inch</td>
+              <td>RTX 3050 4GB</td>
+              <td>none</td>
+              <td>2.2 Kg</td>
+              <td>3h</td>
+              <td>55,700,000</td>
+              <td><button class="btn">Buy now</button></td>
+              <td><button class="btn">X</button></td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <div class="add-modal flex-col gap-2p">
+      <label for="model_inp">Model:</label>
+      <input type="text" id="model_inp" />
+      <label for="pic_inp">Picture:</label>
+      <input type="text" id="pic_inp" />
+      <label for="cpu_inp">Processor:</label>
+      <input type="text" id="cpu_inp" />
+      <label for="ram_inp">RAM</label>
+      <input type="text" id="ram_inp" />
+      <label for="hd_inp">HDD & SSD:</label>
+      <input type="text" id="hd_inp" />
+      <label for="display_inp">Display:</label>
+      <input type="text" id="display_inp" />
+      <label for="gpu">Graphics:</label>
+      <input type="text" id="gpu" />
+      <label for="os_inp">OS:</label>
+      <input type="text" id="os_inp" />
+      <label for="weight_inp">Weight</label>
+      <input type="text" id="weight_inp" />
+      <label for="battery_inp">Battery:</label>
+      <input type="text" id="battery_inp" />
+      <label for="price_inp">Price</label>
+      <input type="text" id="price_inp" />
+      <div class="flex align-cen btns">
+        <button id="save">SAVE</button>
+        <button id="cancel">CANCEL</button>
+      </div>
+    </div>
+    <script src="./js/question7.js"></script>
+  </body>
+</html>
